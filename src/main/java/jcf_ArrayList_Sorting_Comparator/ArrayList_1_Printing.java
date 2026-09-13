@@ -1,10 +1,13 @@
 package jcf_ArrayList_Sorting_Comparator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 /**
  * Refer to Notes.md for detailed notes
  */
-public class ArrayListPrinting {
+public class ArrayList_1_Printing {
     public static void main(String[] args) {
         List<Integer> al1 = new ArrayList<>();
         List<Integer> al2 = List.of(11, 99, 88, 22, 33, 44);

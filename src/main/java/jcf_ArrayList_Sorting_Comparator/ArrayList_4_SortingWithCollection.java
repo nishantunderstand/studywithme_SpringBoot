@@ -1,8 +1,10 @@
 package jcf_ArrayList_Sorting_Comparator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-class ArrayListSortingWithCollection {
+class ArrayList_4_SortingWithCollection {
     public static void main(String[] args) {
         List<Integer> al1 = List.of(11, 99, 88, 22, 33, 44);
         // Arrays.sort(al1);

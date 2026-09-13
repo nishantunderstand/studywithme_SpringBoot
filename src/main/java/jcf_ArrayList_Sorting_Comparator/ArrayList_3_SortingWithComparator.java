@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ArrayListSortingWithComparator {
+public class ArrayList_3_SortingWithComparator {
     public static void main(String[] args) {
         List<Integer> al1 = List.of(11, 99, 88, 22, 33, 44);
         List<Integer> al2 = List.of(99, 33, 11, 55, 88, 44, 22, 33);
