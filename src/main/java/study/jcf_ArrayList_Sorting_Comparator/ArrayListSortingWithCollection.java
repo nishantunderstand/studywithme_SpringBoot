@@ -9,8 +9,5 @@ class ArrayListSortingWithCollection {
         // Collections.sort(al1); // java.lang.UnsupportedOperationException
         Collections.sort(new ArrayList<>(al1)); // Why it is working ??
         System.out.println(al1);
-
-
-
     }
 }
