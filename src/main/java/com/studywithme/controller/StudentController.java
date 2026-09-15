@@ -29,21 +29,12 @@ public class StudentController {
         return ResponseEntity
                 .noContent().build(); //<--
     }
-
-
-    // -----------------------------------------------------------------
-
-
     // Get-All : 200
     @GetMapping
     public ResponseEntity<List<StudentResponse>> getAllStudents() {
         return ResponseEntity
                 .ok(studentService.getAllStudents());
     }
-
-    // -----------------------------------------------------------------
-
-
 
 
     // POST : 201
@@ -54,20 +45,12 @@ public class StudentController {
                 .body(studentService.createStudent(request));
     }
 
-
-    // -----------------------------------------------------------------
-
-
     // 200
     @PutMapping("/{id}")
     public ResponseEntity<StudentResponse> updateStudent(@PathVariable Long id,@RequestBody StudentRequest request) {
         return ResponseEntity
                 .ok(studentService.updateStudent(id, request));
     }
-
-
-    // -----------------------------------------------------------------
-
 
     // 200
     @PatchMapping("/{id}")

@@ -1,33 +1,3 @@
-// GET : 200
-return ResponseEntity.ok(response);
-
-// GET ALL : 200
-return ResponseEntity.ok(response);
-
-// POST : 201
-return ResponseEntity
-.status(HttpStatus.CREATED)
-.body(response);
-
-// PUT : 200
-return ResponseEntity.ok(response);
-
-// DELETE : 204
-return ResponseEntity.noContent().build();
-
-// PATCH 
-
-
-GET       → 200 OK
-POST      → 201 CREATED
-PUT       → 200 OK
-DELETE    → 204 NO CONTENT
-
-
-What is the difference between ok and Status 🤔🤔🤔?
-Factory Method of ResponseEntity
-
-
 ResponseEntity
 |
 |
@@ -42,7 +12,72 @@ ResponseEntity
 |
 ├── 200
 ├── 201
+├── 204
 ├── 400
 ├── 404
 └── Any Status
 
+
+
+GET       → 200 OK
+GET-ALL   → 200 OK
+POST      → 201 CREATED
+PUT       → 200 OK
+PATCH     → 200 OK / 204 NO CONTENT
+DELETE    → 204 NO CONTENT
+
+
+
+// GET : 200
+return ResponseEntity.ok(response);
+
+// GET ALL : 200
+return ResponseEntity.ok(response);
+
+// POST : 201
+return ResponseEntity.status(HttpStatus.CREATED).body(response);
+
+// PUT : 200
+return ResponseEntity.ok(response);
+
+// DELETE : 204
+return ResponseEntity.noContent().build();
+
+// PATCH : 200 /204
+return ResponseEntity.ok(response);
+return ResponseEntity.noContent().build();
+
+
+What is the difference between ok and Status ?
+Factory Method of ResponseEntity
+➡️ ok() = shortcut for 200 OK
+➡️ status() = generic way to specify a status code
+
+
+
+ResponseEntity
+│
+├── Shortcut / Convenience Factory Methods
+│
+├── 1xx INFORMATIONAL
+│   ├── status(...)      → Custom 1xx
+│   └── ...
+│
+├── 2xx SUCCESS
+│   ├── ok()             → 200 OK
+│   ├── created(...)     → 201 CREATED
+│   ├── accepted()       → 202 ACCEPTED
+│   └── noContent()      → 204 NO CONTENT
+│
+├── 3xx REDIRECTION
+│   ├── status(...)      → Custom 3xx
+│   └── ...
+│
+├── 4xx CLIENT ERROR
+│   ├── badRequest()     → 400 BAD REQUEST
+│   ├── status(...)      → Custom 4xx
+│   └── ...
+│
+└── 5xx SERVER ERROR
+    ├── status(...)      → Custom 5xx
+    └── ...
