@@ -43,3 +43,15 @@ public class StudentService {
 
     }
 }
+
+
+/**
+ *
+ */
+
+/**
+ * Entity -> DTO || DTO -> DTO
+ * 1. Setter Based Approach
+ * 2. Constructor Based Approach
+ * 3. Builder Design Pattern
+ */
