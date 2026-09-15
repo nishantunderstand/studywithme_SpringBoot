@@ -9,14 +9,12 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class StudentService {
-
     private final StudentRepository studentReposistory;
-
     public StudentResponseDTO getStudentById(Long id) {
         StudentEntity students = studentReposistory.findById(id)
                 .orElseThrow(()-> new RuntimeException("Student Doesn't Exisit"));
 
-        // Setter Based Approach
+//        // Setter Based Approach
 //        StudentResponseDTO studentResponseDTO = new StudentResponseDTO();
 //        studentResponseDTO.setId(students.getId());
 //        studentResponseDTO.setName(students.getName());
@@ -40,7 +38,6 @@ public class StudentService {
                 .email(students.getEmail())
                 .course(students.getCourse())
                 .build();
-
     }
 }
 

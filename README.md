@@ -51,12 +51,8 @@ Lombok
 
 
 # H2 Default Values
-INSERT INTO students (name, email, course)
-VALUES ('Nishant Raj', 'nishant@gmail.com', 'Java');
-
-INSERT INTO students (name, email, course)
-VALUES ('Rahul Sharma', 'rahul@gmail.com', 'Spring Boot');
-
+INSERT INTO students (name, email, course) VALUES ('Nishant Raj', 'nishant@gmail.com', 'Java');
+INSERT INTO students (name, email, course) VALUES ('Rahul Sharma', 'rahul@gmail.com', 'Spring Boot');
 SELECT * FROM students;
 
 
@@ -97,11 +93,12 @@ git fetch --prune
 
 
 
-Entity -> DTO 
-
-DTO -> DTO
-
+Entity -> DTO   /  DTO -> DTO
 
 1. Setter Based Approach
 2. Constructor Based Approach
 3. Builder Design Pattern
+
+
+H2 URL 
+http://localhost:8080/h2-console
