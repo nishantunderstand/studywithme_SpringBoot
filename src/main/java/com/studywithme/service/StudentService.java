@@ -13,7 +13,6 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class StudentService {
-
     private final StudentRepository studentRepository;
 
     // GET /students/{id}
@@ -23,11 +22,6 @@ public class StudentService {
         // 1. Get Student from DB
         Student student = studentRepository.findById(id)
                 .orElseThrow(() ->new RuntimeException("Student not found with id: " + id));
-
-        // orElse
-        // orElseThrow
-        // Do we have 2 types of overlaoded Stream
-
 
         // 2. Convert Entity -> Response DTO
         StudentResponse response = new StudentResponse();

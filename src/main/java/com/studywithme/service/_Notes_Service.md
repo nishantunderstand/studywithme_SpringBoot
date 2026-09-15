@@ -188,3 +188,21 @@ deleteById()  → void
 ```
 
 **One important interview point:** `save()` is **not just insert**. It can perform an **insert or update**, depending on whether the entity is considered new.
+
+
+
+OPTIONAL<T>
+│
+├── VALUE PRESENT
+│   │
+│   └── get() / orElse() / orElseGet()
+│
+└── VALUE ABSENT
+│
+└── orElseThrow()
+│
+├── orElseThrow()
+│   └── NoSuchElementException
+│
+└── orElseThrow(Supplier)
+└── Custom Exception
