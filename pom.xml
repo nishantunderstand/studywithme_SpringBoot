@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.42</version> <!--Why do i need to add Explict Version  ?? -->
+            <version>1.18.42</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
