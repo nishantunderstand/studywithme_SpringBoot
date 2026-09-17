@@ -1,4 +1,4 @@
-Topic Covered:
+Topic Covered:~
 - Odd & Even numbers using 2 Threads
 - Alternate 1–10 using 2 Threads
 - OddEven Thread Synchronization
