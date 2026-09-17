@@ -1,27 +1,26 @@
-# Study With Me — Spring Boot 🚀
+Thursday, September 17, 2026 12:24:45 PM
 
-## 📚 Different Levels of Implementation
+SELECT * FROM STUDENTS;
 
-| Level        | Branch     | Link                                                                                |
-| ------------ | ---------- | ----------------------------------------------------------------------------------- |
-| 🟢 Level 1   | `level1`   | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/level1)   |
-| 🟡 Level 1.5 | `level1.5` | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/level1.5) |
-| 🟠 Level 1.6 | `level1.6` | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/level1.6) |
-| 🔴 Level 1.7 | `level1.7` | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/level1.7) |
+INSERT INTO students (name, email,course)
+VALUES ('Aman', 'Aman@gmail.com', 'Math');
 
-## 💼 Interview Preparation
 
-| Branch                      | Link                                                                                               |
-| --------------------------- | -------------------------------------------------------------------------------------------------- |
-| ☕ `interview-java`          | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/interview-java)          |
-| ☕ `interview-java8-pratice` | [View →](https://github.com/nishantunderstand/studywithme_springboot/tree/interview-java8-pratice) |
+Syntax Mistake is really bad.
 
-## 🔄 Git
+=============================
 
-```bash
-git fetch origin --prune
-```
+INSERT INTO students (course, name, email)
+VALUES ('Java', 'Aman', 'aman@gmail.com');
 
-```bash
-git branch -a
-```
+INSERT INTO students (course, name, email)
+VALUES ('Spring Boot', 'Rahul', 'rahul@gmail.com');
+
+INSERT INTO students (course, name, email)
+VALUES ('Microservices', 'Priya', 'priya@gmail.com');
+
+INSERT INTO students (course, name, email)
+VALUES ('Kafka', 'Rohit', 'rohit@gmail.com');
+
+INSERT INTO students (course, name, email)
+VALUES ('AWS', 'Neha', 'neha@gmail.com');
