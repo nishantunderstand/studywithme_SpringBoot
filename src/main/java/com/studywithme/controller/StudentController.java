@@ -14,10 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/students1")
 public class StudentController {
     private final StudentService studentService;
+
     @GetMapping("/{id}")
     public ResponseEntity<StudentResponseDTO> getStudentById(@PathVariable Long id){
         return ResponseEntity.ok(studentService.getStudentById(id));
     }
+
+
 }
 
 

@@ -102,3 +102,12 @@ Entity -> DTO   /  DTO -> DTO
 
 H2 URL 
 http://localhost:8080/h2-console
+
+
+---
+
+
+- Tell me which is correct and why ?
+- 2026/09/30
+- return ResponseEntity.body(response).status(HttpStatus.CREATED);
+return ResponseEntity.status(HttpStatus.CREATED).body(response);
