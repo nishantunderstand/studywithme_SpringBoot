@@ -30,7 +30,7 @@ public class StudentController {
                 .noContent().build(); //<--
     }
     // Get-All : 200
-    @GetMapping
+    @GetMapping //<--
     public ResponseEntity<List<StudentResponse>> getAllStudents() {
         return ResponseEntity
                 .ok(studentService.getAllStudents());
@@ -38,7 +38,7 @@ public class StudentController {
 
 
     // POST : 201
-    @PostMapping
+    @PostMapping //<--
     public ResponseEntity<StudentResponse> createStudent(@RequestBody StudentRequest request) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
